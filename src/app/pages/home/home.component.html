@@ -1,0 +1,26 @@
+<div class="container">
+
+    <section>
+
+        <div class="w-ful flex flex-col items-center mb-8">
+            <h2 class="font-oswald font-extrabold text-2xl uppercase mb-4">Popular <span
+                    class="text-primary-600">Foods</span></h2>
+            <p class="w-3/4 text-center">The popular burger is a culinary icon loved by people of all ages. It consists
+                of a juicy,
+                grilled patty
+                nestled between soft buns, offering a satisfying and flavorful experience. Topped with an array of
+                delectable ingredients like cheese, lettuce, tomato, and sauces, it becomes a customizable masterpiece.
+                From classic beef burgers to creative variations like veggie or chicken options, there's a burger to
+                suit every palate. Whether enjoyed at a fast-food joint or a gourmet restaurant, the burger's appeal
+                lies in its simplicity, versatility, and ability to provide a delicious escape into a world of savory
+                delight.</p>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+            <app-wd-card [data]="data" *ngFor="let data of burger"></app-wd-card>
+        </div>
+        <!-- Card Section -->
+    </section>
+
+</div>
